@@ -1,6 +1,11 @@
 *.class
 
+# DB #
+db/
+
+# temp files #
+*~
+
 # Package Files #
-*.jar
 *.war
 *.ear

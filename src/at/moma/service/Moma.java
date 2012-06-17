@@ -1,6 +1,12 @@
 package at.moma.service;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
 import org.apache.log4j.*;
+
+import at.moma.persistence.IDbAccess;
+import at.moma.persistence.h2.H2DbAccess;
 /**
  * This class contains the main class.
  * 
@@ -16,10 +22,15 @@ public class Moma {
 	 * configures the logger
 	 * 
 	 * @param args
+	 * @throws SQLException 
+	 * @throws ClassNotFoundException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
 		configureLogger();
 		log.info("Logger set up");
+		
+		IDbAccess dbAccess = H2DbAccess.instance();
+		Connection con = dbAccess.getConnection();
 	}
 	
 	/**
