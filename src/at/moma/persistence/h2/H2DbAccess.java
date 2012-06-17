@@ -7,13 +7,16 @@ import java.sql.SQLException;
 
 import org.apache.log4j.Logger;
 import at.moma.persistence.IDbAccess;
+import at.moma.service.SettingsUtil;
 
 public class H2DbAccess implements IDbAccess {
 	
 	private static H2DbAccess instance = null;
 	private static Logger log = Logger.getLogger(H2DbAccess.class);
 	
-	private String datenbank = "jdbc:h2:db" + File.separator + "database";
+	private String datenbank = "jdbc:h2:db" + File.separator + "database;CIPHER=AES";
+	private String filePw = SettingsUtil.getFilePw();
+	private String userPw = filePw;
 	
 	public static synchronized H2DbAccess instance(){
 		if(instance==null){
@@ -29,7 +32,7 @@ public class H2DbAccess implements IDbAccess {
 	@Override
 	public Connection getConnection() throws SQLException, ClassNotFoundException {
 		log.info("get connection to h2 db");
-		return DriverManager.getConnection(datenbank);
+		return DriverManager.getConnection(datenbank, "user", userPw + " " + filePw);
 	}
 
 }

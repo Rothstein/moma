@@ -29,8 +29,13 @@ public class Moma {
 		configureLogger();
 		log.info("Logger set up");
 		
+		//user PW http://www.h2database.com/html/advanced.html#passwords
+		SettingsUtil.setFilePw("test");		
+		
+		//connect db and close db
 		IDbAccess dbAccess = H2DbAccess.instance();
 		Connection con = dbAccess.getConnection();
+		con.close();
 	}
 	
 	/**
