@@ -15,7 +15,7 @@ import at.moma.persistence.h2.H2DbAccess;
  */
 public class Moma {
 
-	private static Level logLevel = Level.INFO;
+	private static Level logLevel = Level.DEBUG;
 	private static Logger log = Logger.getRootLogger();
 	
 	/**
@@ -29,13 +29,15 @@ public class Moma {
 		configureLogger();
 		log.info("Logger set up");
 		
-		//user PW http://www.h2database.com/html/advanced.html#passwords
-		SettingsUtil.setFilePw("test");		
+		//user PW
+		SettingsUtil.setPassword("test");
+		SettingsUtil.setUsername("test");
+		//TODO: http://www.h2database.com/html/advanced.html#passwords
 		
 		//connect db and close db
 		IDbAccess dbAccess = H2DbAccess.instance();
 		Connection con = dbAccess.getConnection();
-		con.close();
+		dbAccess.closeConnection();
 	}
 	
 	/**
