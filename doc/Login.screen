@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Panel" id="12" x="336" y="256" width="244" height="156" measuredWidth="244" measuredHeight="156"/>
+  <widgets xsi:type="model:TextField" id="13" x="408" y="288" width="104" text="Benutzername" measuredWidth="104" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="14" x="408" y="328" width="104" text="Passwort" measuredWidth="104" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="15" x="520" y="377" text="Login" measuredWidth="50" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="16" x="346" y="377" text="Abbrechen" measuredWidth="81" measuredHeight="25">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

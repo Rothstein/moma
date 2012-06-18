@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" id="1" x="256" y="88" width="697" height="513" text="MoMa" measuredWidth="697" measuredHeight="513"/>
+  <widgets xsi:type="model:TabbedPane" id="2" x="266" y="144" width="677" height="447" text="Journal,Auswertung" measuredWidth="677" measuredHeight="447" selection="1">
+    <items x="10" y="0" width="61" height="27" text="Journal"/>
+    <items x="71" y="0" width="87" height="27" text="Auswertung"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Menu" id="4" x="256" y="107" width="697" text="&amp;Datei,&amp;Einstellungen,&amp;Help" measuredWidth="697" measuredHeight="27">
+    <items x="5" y="0" width="40" height="27" text="&amp;Datei"/>
+    <items x="45" y="0" width="85" height="27" text="&amp;Einstellungen"/>
+    <items x="130" y="0" width="35" height="27" text="&amp;Help"/>
+  </widgets>
+  <widgets xsi:type="model:Chart" id="12" x="621" y="385" width="312" height="196" measuredWidth="312" measuredHeight="196" chartType="column"/>
+  <widgets xsi:type="model:Chart" id="13" x="621" y="181" width="312" height="198" measuredWidth="312" measuredHeight="198" chartType="line"/>
+  <widgets xsi:type="model:Table" id="14" x="276" y="385" height="196" text="Name,Last\nName,=. Age v,(w:30). Kids,Likes,(align:center). Actions&#xA;Peter,Severin,35,[x],{computer},[Edit] [View]&#xA;Henri,Severin,5,[],{train},[Edit] [View]&#xA;Olga,Severin,60,[x],{note},[Edit] [View]&#xA;[-] You can even&#xA;  [+] Make a&#xA;  [+] Tree table" measuredWidth="335" measuredHeight="196" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:List" id="15" x="276" y="181" text="(o) Jahr&#xA;( ) Quartal&#xA;( ) Monat&#xA;( ) Woche&#xA;( ) Tag" measuredWidth="70" measuredHeight="114" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="70" height="22" text="(o) Jahr"/>
+    <items x="0" y="24" width="70" height="22" text="( ) Quartal"/>
+    <items x="0" y="46" width="70" height="22" text="( ) Monat"/>
+    <items x="0" y="68" width="70" height="22" text="( ) Woche"/>
+    <items x="0" y="90" width="70" height="22" text="( ) Tag"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

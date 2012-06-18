@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" id="2" x="256" y="88" width="697" height="513" text="MoMa" measuredWidth="697" measuredHeight="513"/>
+  <widgets xsi:type="model:TabbedPane" id="3" x="266" y="144" width="677" height="447" text="Journal,Auswertung" measuredWidth="677" measuredHeight="447" selection="0">
+    <items x="10" y="0" width="61" height="27" text="Journal"/>
+    <items x="71" y="0" width="87" height="27" text="Auswertung"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="5" x="276" y="181" width="157" height="400" text="Filter" measuredWidth="157" measuredHeight="400">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Menu" id="6" x="256" y="107" width="697" text="&amp;Datei,&amp;Einstellungen,&amp;Help" measuredWidth="697" measuredHeight="27">
+    <items x="5" y="0" width="40" height="27" text="&amp;Datei"/>
+    <items x="45" y="0" width="85" height="27" text="&amp;Einstellungen"/>
+    <items x="130" y="0" width="35" height="27" text="&amp;Help"/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="7" x="286" y="198" width="137" text="Search" measuredWidth="137" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="8" x="440" y="188" width="493" height="393" text="Name,Last\nName,=. Age v,(w:30). Kids,Likes,(align:center). Actions&#xA;Peter,Severin,35,[x],{computer},[Edit] [View]&#xA;Henri,Severin,5,[],{train},[Edit] [View]&#xA;Olga,Severin,60,[x],{note},[Edit] [View]&#xA;[-] You can even&#xA;  [+] Make a&#xA;  [+] Tree table" measuredWidth="493" measuredHeight="393" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:List" id="10" x="286" y="232" text="[x] offen&#xA;[ ] geschlossen&#xA;&#xA;[x] gewinner&#xA;[x] verlierer" measuredWidth="95" measuredHeight="114" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="95" height="22" text="[x] offen"/>
+    <items x="0" y="24" width="95" height="22" text="[ ] geschlossen"/>
+    <items x="0" y="46" width="95" height="22"/>
+    <items x="0" y="68" width="95" height="22" text="[x] gewinner"/>
+    <items x="0" y="90" width="95" height="22" text="[x] verlierer"/>
+  </widgets>
+  <widgets xsi:type="model:DateField" id="14" x="310" y="369" width="107" text="  /  /  " measuredWidth="107" measuredHeight="23"/>
+  <widgets xsi:type="model:DateField" id="15" x="310" y="408" width="107" text="  /  /  " measuredWidth="107" measuredHeight="23"/>
+  <widgets xsi:type="model:Label" id="17" x="286" y="369" text="von" measuredWidth="25" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="18" x="286" y="408" text="bis" measuredWidth="20" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

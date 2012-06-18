@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="30cm" height="30cm" viewBox="211 85 591 588" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="335" y="86" width="466" height="586"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="335" y="86" width="466" height="586"/>
+  </g>
+  <text font-size="16.9331" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="345" y="109">
+    <tspan x="345" y="109">MoMa</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffffff" cx="240" cy="325" rx="6" ry="6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="240" cy="325" rx="6" ry="6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="216" y1="337" x2="264" y2="337"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="240" y1="331" x2="240" y2="361"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="240" y1="361" x2="216" y2="387"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="240" y1="361" x2="264" y2="387"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="240" y="410.9">
+      <tspan x="240" y="410.9">Benutzer</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="568.85" cy="191.283" rx="81.85" ry="27.2833"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="568.85" cy="191.283" rx="81.85" ry="27.2833"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="568.85" y="195.183">
+      <tspan x="568.85" y="195.183">Produkte erfassen</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="571.25" cy="359.75" rx="86.25" ry="28.75"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="571.25" cy="359.75" rx="86.25" ry="28.75"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="571.25" y="363.65">
+      <tspan x="571.25" y="363.65">Produkte verwalten</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="568.15" cy="534.05" rx="93.15" ry="31.05"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="568.15" cy="534.05" rx="93.15" ry="31.05"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="568.15" y="537.95">
+      <tspan x="568.15" y="537.95">auswerten der Trades</tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="568.15" y="534.05">
+    <tspan x="568.15" y="534.05"></tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="268.855" y1="341.173" x2="487" y2="191.283"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="268.86" y1="360.853" x2="485" y2="359.75"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="268.873" y1="382.262" x2="475" y2="534.05"/>
+</svg>

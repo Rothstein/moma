@@ -49,5 +49,12 @@ public class H2DbAccess implements IDbAccess {
 			log.info("connection closed");
 		}
 	}
+	
+	/**
+	 * this method is only used by the test framework
+	 */
+	public void setConnection(Connection c){
+		connection = c;
+	}
 
 }
