@@ -33,14 +33,17 @@ public class Moma {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws SQLException, ClassNotFoundException, IOException {
+		//configure logger
 		configureLogger();
 		log.info("Logger set up");
 		
-		IFileDao fileDao = new FileDao("config/settings");
-		System.out.println(fileDao.getValue("language"));
-		System.out.println(fileDao.getValue("version"));
-		fileDao.setValue("version", "0.1");
-		fileDao.setValue("language", "en");
+		//read the application configuration
+		log.info("Configure application");
+		SettingsUtil.readSettings();
+		
+		MessageService mService = MessageService.instance();
+		System.out.println(mService.getMessage("username"));
+		System.out.println(mService.getMessage("passwort"));
 		
 		//user PW
 		SettingsUtil.setPassword("test");
@@ -52,7 +55,6 @@ public class Moma {
 		try {
 			dbAccess = DbAccessFactory.getDbAccess("h2");
 		} catch (DbAccessException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		Connection con = dbAccess.getConnection();

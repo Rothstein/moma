@@ -1,10 +1,20 @@
 package at.moma.service;
 
+import java.io.FileNotFoundException;
+
+import at.moma.persistence.dao.FileDao;
+import at.moma.persistence.dao.IFileDao;
+
 public class SettingsUtil {
 
 	private static String language = "en";
 	private static String password;
 	private static String username;
+	
+	public static void readSettings() throws FileNotFoundException{
+		IFileDao fileDao = new FileDao("config/settings");
+		setLanguage(fileDao.getValue("language"));
+	}
 
 	public static String getUsername() {
 		return username;
