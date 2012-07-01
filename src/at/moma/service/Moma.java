@@ -1,6 +1,5 @@
 package at.moma.service;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -10,9 +9,6 @@ import org.apache.log4j.*;
 import at.moma.persistence.DbAccessException;
 import at.moma.persistence.DbAccessFactory;
 import at.moma.persistence.IDbAccess;
-import at.moma.persistence.dao.FileDao;
-import at.moma.persistence.dao.IFileDao;
-import at.moma.persistence.h2.H2DbAccess;
 /**
  * This class contains the main class.
  * 
@@ -41,9 +37,13 @@ public class Moma {
 		log.info("Configure application");
 		SettingsUtil.readSettings();
 		
+		//TODO: Login oder neuen Benutzer anlegen
+		
 		MessageService mService = MessageService.instance();
 		System.out.println(mService.getMessage("username"));
 		System.out.println(mService.getMessage("passwort"));
+		
+		SettingsUtil.setLanguage("en");
 		
 		//user PW
 		SettingsUtil.setPassword("test");

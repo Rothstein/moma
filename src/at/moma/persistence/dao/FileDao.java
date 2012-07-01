@@ -33,9 +33,9 @@ public class FileDao implements IFileDao {
 		sc = new Scanner(file);
 		while(sc.hasNext()){
 			if(sc.next().equals(key)){
-				return sc.next();
+				return sc.nextLine().trim();
 			}else{
-				sc.next();
+				sc.nextLine();
 			}
 		}
 		return null;
@@ -51,9 +51,9 @@ public class FileDao implements IFileDao {
 			tmpKey = sc.next();
 			if(tmpKey.equals(key)){
 				writeBack += tmpKey + " " + value + "\n";
-				sc.next();
+				sc.nextLine();
 			}else{
-				writeBack += tmpKey + " " + sc.next() + "\n";
+				writeBack += tmpKey + sc.nextLine() + "\n";
 			}
 		}
 		writeBack.trim();
